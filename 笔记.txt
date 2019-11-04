@@ -1,0 +1,76 @@
+ qureystring 查询字符串
+   querystring.decode（）将query解析为json对象
+   querystring.encode（）将json对象解析为query
+   querystring.escape（str） 以一种针对URL查询字符串的特定要求进行了优化的方式对给定的URL执行百分比编码 
+   querystring.parse（str [，sep [，eq [，options]]]）URL查询字符串（str）解析为键和值对的集合。
+      str <string>要解析的URL查询字符串
+      sep <string>用来分隔查询字符串中的键和值对的子字符串。默认值： '&'。
+      eq <string>。用来分隔查询字符串中的键和值的子字符串。默认值： '='。
+      options <对象>
+    querystring.unescape（str）给定的URL上执行URL百分比编码字符的解码str
+    querystring.escape（str）参数编码
+
+ exports module.exports
+
+ 包管理工具:npm
+
+
+
+
+
+
+  querystring.decode（）   querystring.parse()将query字符串解析为json对象
+  querystring.encode（）   querystring.stringify()将json对象解析为query字符串
+  querystring.escape（str）对字符串编码
+  querystring.unescape（str）对已编码字符串解码
+
+ 块级作用域：只在当前作用域中生效
+ 每一个js都是一个独立的模块，而每个变量只在当前模块生效
+ Es6 export export default
+
+ exports  module.exports
+    抛出，暴露
+ exports  module.exports区别？
+    1.两者默认都是空对象
+    2.exprots是指向mouule.exports的引用
+ settimeout promise属于宏任务还是微任务
+   JS异步还有一个机制，就是遇到宏任务，先执行宏任务,再执行微任务
+   整体代码作为宏任务进入主线程,当遇到settimeout时,settimeout的回调函数执行后会进入宏队列中,
+   当遇到promise时,new promise 会立即执行,回调函数会进入到微队列中,当遇到consloe.log时,会立即执行
+   当宏任务执行完毕后,查看是否还有微任务,发现then函数,立即执行
+
+exports  module.exports
+    exports 返回的是模块函数,exports的方法可以直接调用
+    exports的生存周期是当前模块的执行时间，
+    exports.[function name] = [function name]
+
+    module.exports 返回的是模块对象本身，返回的是一个类,module.exports需要new对象之后才可以调用链接
+    moudle.exports= [function name]
+    而module.exports生存周期则是当前程序的执行时间
+  contain 与break的区别
+
+fs模块
+ readFile writeFile
+
+200 400 304 404 500 502 
+包管理工具:npm
+   npm包安装分本地安装（local）和全局安装（global），差别是带不带 -g(global).
+   本地安装：将安装包放在./node_modules下；可以通过require()引入本地安装包。
+  全局安装：将安装包放在/urs/local或者node的安装目录；可以直接在命令行使用。
+  命令: login 登录npm
+        nmp publish 推送包
+        npm install= npm i 下载
+        npm install 包名称 --save
+        --save=-S代表把项目依赖包下载到生产环境当中,
+        什么是生产环境? 线上运行的环境
+        --save-dev=-D把项目依赖包下载到开发环境当中
+        
+
+        npm init  =npm init -y 项目初始化=>package.json
+        npm  uninstall   卸载(-g全局)
+
+cnmp 淘宝镜像 
+例子:上传图片  formidable
+ 
+   
+
